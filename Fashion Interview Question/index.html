@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZARA | Fashion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">ZARA</div>
+        <nav>
+            <a href="#">Collection</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Accessories</a>
+        </nav>
+        <div class="cart-icon">Bag (0)</div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>ESSENTIALS 2026</h1>
+            <p>Define your style with our collection.</p>
+            <a href="#shop" class="btn-primary">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="filters" id="shop">
+        <button class="filter-btn active" data-filter="All">All</button>
+        <button class="filter-btn" data-filter="men">Men</button>
+        <button class="filter-btn" data-filter="women">Women</button>
+    </section>
+
+    <section class="product-grid">
+        <article class="product-card" data-category="women">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=500" alt="Silk Blouse">
+            <button class="quick-view-btn">Quick View</button>
+            </div>
+            <h3>yellow dress </h3>
+            <p>Rs 89.00</p>
+        </article>
+
+        <article class="product-card" data-category="men">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&q=80&w=500" alt="Oversized Suit">
+            <button class="quick-view-btn">Quick View</button>
+            </div>
+            <h3>Modern Suit</h3>
+            <p>Rs 299.00</p>
+        </article>
+
+        <article class="product-card" data-category="women">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1539109132314-34755249ff91?auto=format&fit=crop&q=80&w=500" alt="Wool Coat">
+            <button class="quick-view-btn">Quick View</button>
+            </div>
+            <h3>Wool Coat</h3>
+            <p>Rs 150.00</p>
+        </article>
+
+        <article class="product-card" data-category="men">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1505022610485-0249ba5b3675?auto=format&fit=crop&q=80&w=500" alt="Linen Shirt">
+            <button class="quick-view-btn">Quick View</button>
+            </div>
+            <h3>Linen Shirt</h3>
+            <p>Rs 55.00</p>
+        </article>
+
+        <article class="product-card" data-category="women">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=500" alt="Plisse Trousers">
+            <button class="quick-view-btn">Quick View</button>
+            </div>
+            <h3>Trousers</h3>
+            <p>Rs 75.00</p>
+        </article>
+
+        <article class="product-card" data-category="men">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?auto=format&fit=crop&q=80&w=500" alt="Leather Boots">
+            <button class="quick-view-btn">Quick View</button>
+            </div>
+            <h3>Boots</h3>
+            <p>Rs 120.00</p>
+        </article>
+    </section>
+
+    <section class="newsletter">
+        <h2>JOIN OUR COMMUNITY</h2>
+        <p>Subscribe for early access and styling tips.</p>
+        <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <div id="quickViewModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <img id="modal-img" src="" alt="Product">
+                <div class="modal-info">
+                    <h2 id="modal-name">Product Name</h2>
+                    <p id="modal-price">Rs 0.00</p>
+                    <p class="desc">High-quality fabric designed for a Great Person</p>
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 ZARA FASHION INC. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
